@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Criptomoedas</title>
+  <link href="styleQuiz.css" rel="stylesheet" type="text/css" />
+
+  <style>
+
+    .flex {
+      display: flex;
+    }
+    
+    .voltar {
+      margin-top: 50px;
+      margin-right: -160px;
+      margin-left: 60px;
+      width: 60px;
+      height: 60px;
+      background-color: #D49B2D;
+      margin-bottom: -80px;
+
+      border: none;
+      font-style: none;
+      border-radius: 18px;
+      cursor: pointer;
+
+    }
+    .voltarIMG{
+      width: 40px;
+      margin-top: 3px;
+      align-items: center;
+      border: none;
+    }
+
+
+  </style>
+</head>
+
+<body class="body">
+
+  <div class="flex">
+    <button class="voltar" onclick="window.location.href='index.html'"> <img class="voltarIMG" src="img/voltar.png"/> </button>
+  
+
+        <div class="quiz">
+          <h1> QUIZ </h1>
+          <div class="app">
+            <h2 id="pergunta">Pergunta vai aqui</h2>
+            <div id="respostas">
+              <button class="resposta-btn">Resposta 1</button>
+              <button class="resposta-btn">Resposta 2</button>
+              <button class="resposta-btn">Resposta 3</button>
+              <button class="resposta-btn">Resposta 4</button>
+            </div>
+            <p style="text-align: center; color: #9a8851; font-family: Helvetica, sans-serif; font-size: 15px;" id="explanation"></p>
+            <button id="proxima-questão">Próxima</button>
+          </div>
+        </div>
+    
+    </div>
+
+  <script>
+    const questions = [
+      {
+        question: "O que é uma criptomoeda?",
+        answers: [
+          { text: "a) Um tipo de moeda digital que usa criptografia para segurança.", correct: true},
+          { text: "b) Uma forma de moeda física.", correct: false},
+          { text: "c) Um cartão de crédito especial.", correct: false},
+          { text: "d) Um tipo de investimento imobiliário.", correct: false},
+          ],
+        explanation: "Criptomoedas são moedas digitais ou virtuais que utilizam criptografia para garantir a segurança das transações. Elas não existem em forma física e são descentralizadas, geralmente utilizando a tecnologia blockchain.",
+      },
+
+      {
+        question: "Qual foi a primeira criptomoeda criada?",
+        answers: [
+          { text: "a) Ethereum", correct: false},
+          { text: "b) Litecoin", correct: false},
+          { text: "c) Bitcoin", correct: true},
+          { text: "d) Ripple", correct: false},
+          ],
+        explanation: "Bitcoin, criada em 2009 por um indivíduo ou grupo usando o pseudônimo Satoshi Nakamoto, foi a primeira criptomoeda e continua a ser a mais conhecida e valiosa.",
+      },
+
+      {
+        question: "Quem é o criador do Bitcoin?",
+        answers: [
+          { text: "a) Vitalik Buterin", correct: false},
+          { text: "b) Satoshi Nakamoto", correct: true},
+          { text: "c) Charles Hoskinson", correct: false},
+          { text: "d) Jed McCaleb", correct: false},
+          ],
+        explanation: "Satoshi Nakamoto é o nome utilizado pela pessoa ou grupo de pessoas que desenvolveu o Bitcoin e escreveu seu white paper original. A verdadeira identidade de Satoshi Nakamoto permanece desconhecida.",
+      },
+
+      {
+        question: "O que é 'mineração' em termos de criptomoedas?",
+        answers: [
+          { text: "a) Extração de minérios para vender e comprar criptomoedas.", correct: false},
+          { text: "b) Processo de criar novos blocos e validar transações.", correct: true},
+          { text: "c) Compra e venda de criptomoedas na bolsa.", correct: false},
+          { text: "d) Armazenamento de criptomoedas em um cofre seguro.", correct: false},
+          ],
+          explanation: "A mineração é o processo pelo qual novas unidades de criptomoedas são geradas. Envolve a resolução de problemas matemáticos complexos para validar e registrar transações na blockchain, o que também assegura a integridade do sistema.",
+      },
+
+      {
+      question: "Qual é o nome da tecnologia subjacente às criptomoedas?",
+      answers: [
+        { text: "a) Cloud computing", correct: false},
+        { text: "b) Internet of Things", correct: false},
+        { text: "c) Blockchain", correct: true},
+        { text: "d) Machine learning", correct: false},
+        ],
+        explanation: "Blockchain é uma tecnologia de contabilidade distribuída que registra todas as transações feitas com uma criptomoeda em blocos interligados. É a base tecnológica que garante a segurança e a transparência das criptomoedas.",
+      },
+
+      {
+      question: " O que é uma ICO (Initial Coin Offering)?",
+      answers: [
+        { text: "a) Processo de minerar novas criptomoedas.", correct: false},
+        { text: "b) Lançamento inicial de uma nova criptomoeda para arrecadar fundos.", correct: true},
+        { text: "c) Compra de ações de uma empresa de criptomoedas.", correct: false},
+        { text: "d) Troca de criptomoedas por moedas tradicionais.", correct: false},
+        ],
+        explanation: "Uma ICO é um método de arrecadação de fundos em que novos projetos de criptomoedas vendem uma quantidade inicial de suas moedas para investidores em troca de dinheiro ou outras criptomoedas. É semelhante a uma oferta pública inicial (IPO) no mercado de ações, mas para criptomoedas.",
+      },
+
+      {
+      question: "O que significa 'HODL' no contexto de criptomoedas?",
+      answers: [
+        { text: "a) Vender criptomoedas rapidamente.", correct: false},
+        { text: "b) Comprar e vender criptomoedas frequentemente.", correct: false},
+        { text: "c) Manter criptomoedas a longo prazo.", correct: true},
+        { text: "d) Hackear carteiras de criptomoedas.", correct: false},
+        ],
+        explanation: "'HODL' é um termo originado de um erro de digitação de 'hold' (manter) e significa manter as criptomoedas em vez de vendê-las, mesmo durante períodos de alta volatilidade do mercado, acreditando que os preços subirão no longo prazo.",
+      },
+
+      {
+      question: "Qual dessas é uma criptomoeda que suporta contratos inteligentes?",
+        answers: [
+        { text: "a) Bitcoin", correct: false},
+        { text: "b) Tether", correct: false},
+        { text: "c) Dogecoin", correct: false},
+        { text: "d) Ethereum", correct: true},
+        ],
+        explanation: "Ethereum é uma plataforma que permite a criação de contratos inteligentes (smartcontracts) e aplicações descentralizadas (dApps) que funcionam exatamente como programado, sem possibilidade de tempo de inatividade, censura, fraude ou interferência de terceiros.",
+      },
+
+      {
+      question: "O que é uma carteira de criptomoedas?",
+        answers: [
+        { text: "a) Um software ou hardware para armazenar chaves privadas e públicas.", correct: true},
+        { text: "b) Um banco físico para armazenar criptomoedas.", correct: false},
+        { text: "c) Um mercado online para comprar criptomoedas.", correct: false},
+        { text: "d) Um serviço de conversão de criptomoedas para dinheiro físico.", correct: false},
+        ],
+        explanation: "Uma carteira de criptomoedas é um dispositivo ou programa que armazena chaves privadas e públicas e interage com várias blockchains para que os usuários possam enviar e receber moeda digital e monitorar seu saldo.",
+      },
+
+      {
+      question: " Qual é a principal vantagem da descentralização nas criptomoedas?",
+        answers: [
+        { text: "a) Aumento da velocidade das transações.", correct: false},
+        { text: "b) Redução da transparência das transações.", correct: false},
+        { text: "c) Eliminação da necessidade de intermediários como bancos", correct: true},
+        { text: "d) Aumento da volatilidade do mercado", correct: false},
+        ],
+        explanation: "A descentralização remove a necessidade de intermediários, como bancos, nas transações financeiras, permitindo transações diretas entre os participantes. Isso pode reduzir custos, aumentar a segurança e proporcionar mais controle financeiro aos indivíduos.",
+      },
+    ];
+
+    const perguntaElement = document.getElementById("pergunta");
+    const explanationElement = document.getElementById("explanation");
+    const respostaButtons = document.getElementById("respostas");
+    const proximoButton = document.getElementById("proxima-questão");
+
+    let perguntaCurrentIndex = 0;
+    let pontuação = 0;
+
+    function iniciarQuiz(){
+      perguntaCurrentIndex = 0;
+      pontuação = 0;
+      proximoButton.innerHTML = "Próximo";
+      mostrarQuestions();
+    }
+
+    function mostrarQuestions(){
+      resetState();
+      let perguntaCurrent = questions[perguntaCurrentIndex];
+      let perguntaNo = perguntaCurrentIndex + 1;
+      perguntaElement.innerHTML = perguntaNo + ". " + perguntaCurrent.question;
+
+      perguntaCurrent.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("resposta-btn");
+        respostaButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+
+      });
+    }
+
+    function resetState(){
+      proximoButton.style.display = "none";
+      while(respostaButtons.firstChild){
+        respostaButtons.removeChild(respostaButtons.firstChild);
+      }
+    }
+
+    function selectAnswer(e){
+      const selectedBtn = e.target;
+      const isCorrect = selectedBtn.dataset.correct === "true";
+      if(isCorrect){
+        selectedBtn.classList.add("correct");
+        pontuação++;
+
+      }else{
+        selectedBtn.classList.add("incorrect");
+        selectedBtn.classList.add("correct");
+
+      }
+      Array.from(respostaButtons.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+          button.classList.add("correct");
+          
+        }
+        button.disabled = true;
+        
+      });
+      explanationElement.style.display = "block";
+      explanationElement.innerHTML = questions[perguntaCurrentIndex].explanation;
+      proximoButton.style.display = "block";        
+     
+    }
+
+    function mostrarPontuação(){
+      resetState();
+      perguntaElement.innerHTML = "Você acertou " + pontuação + " de " + questions.length + "!";
+      proximoButton.innerHTML = "Reiniciar";
+      proximoButton.style.display = "block";
+
+    }
+
+    function handleProximaQuestão(){
+      perguntaCurrentIndex++;
+      if(perguntaCurrentIndex < questions.length){
+        explanationElement.style.display = "none";
+        mostrarQuestions();
+        
+      }else{
+        mostrarPontuação();
+        explanationElement.style.display = "none";
+        
+      }
+    }
+
+      proximoButton.addEventListener("click", () => {
+      if(perguntaCurrentIndex < questions.length){
+
+        handleProximaQuestão();
+        
+      }else{
+        iniciarQuiz();
+      }
+
+    });
+
+    iniciarQuiz();
+  </script>
+
+
+</body>
+
+</html>

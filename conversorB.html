@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Criptomoedas</title>
+  <link href="styleQuiz.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .flex {
+      display: flex;
+    }
+
+    .voltar {
+      margin-top: 50px;
+      margin-right: -160px;
+      margin-left: 60px;
+      width: 60px;
+      height: 60px;
+      background-color: #D49B2D;
+      margin-bottom: -80px;
+
+      border: none;
+      font-style: none;
+      border-radius: 18px;
+      cursor: pointer;
+
+    }
+    .voltarIMG{
+      width: 40px;
+      margin-top: 3px;
+      align-items: center;
+      border: none;
+    }
+
+
+  </style>
+</head>
+
+<body class="body">
+
+  <div class="flex">
+    <button class="voltar" onclick="window.location.href='index.html'"> <img class="voltarIMG" src="img/voltar.png"/> </button>
+  </div>
+
+  <div style="margin-top: 115px;">
+    <div class="center">
+      <h1 style="font-family: poppins; color: #898585; font-size: 42px;">Conversor: Real/Bitcoin e Bitcoin/Real</h1>
+    </div>
+  
+    <div class="center" style="margin-top: 80px; margin-left: -100px;">
+        <label style="font-family: poppins; margin-right: 20px; color: #c29e60; font-size: 18px;" for="btcInput">Digite o valor em Bitcoin <span style="font-weight: bold;"> (BTC) </span> :</label>
+        <input style=" background-color: #A4A3A3; border: 1px solid gray; border-radius: 10px; height: 30px; width:250px; margin-right: 20px; font-size: 15px;" type="number" id="btcInput" step="0.0001">
+        <button style="border: none; color: #222222; background-color: #5D5C5C; border-radius: 10px;  width: 85px; height: 35px; font-weight: bold; cursor: pointer; font-size: 15px; " onclick="convertToBRL()">
+          
+          <div class="flex">
+          <p style="color: #222222; font-weight: bold; font-size: 15px; text-align: center; margin-top: 10px;"> BRL </p> <img src="img/seta2.png" width="30px" height="30px" style="margin-left: 10px;"/> 
+          </div>
+    </div>
+
+
+    <div class="center" style="margin-top: 100px; margin-bottom: 50px; margin-left: -100px;">
+      <label style="font-family: poppins; margin-right: 20px; color: #c29e60; font-size: 18px;" for="btcInput">Digite o valor em Real <span style="font-weight: bold;"> (BRL) </span> :</label>
+      <input style="background-color: #A4A3A3; border: 1px solid gray; border-radius: 10px; height: 30px; width: 250px; margin-right: 20px; font-size: 15px;" type="number" id="brlInput" step="0.0001">
+      <button style="border: none; background-color: #5D5C5C; border-radius: 10px; width: 85px; height: 35px; cursor: pointer;" onclick="convertToBTC()">
+
+        <div class="flex">
+        <p style="color: #222222; font-weight: bold; font-size: 15px; text-align: center; margin-top: 10px;"> BTC </p> <img src="img/seta2.png" width="30px" height="30px" style="margin-left: 10px;"/> 
+        </div>
+      </button>
+    </div>
+
+    <div class="center">
+      <p style="font-family: poppins; margin-left: 45px; margin-top: 70px; margin-left: -100px;" id="resultBRL"></p>
+      <p style="font-family: poppins; margin-left: 45px; margin-top: 70px; margin-left: 95px;" id="resultBTC"></p>
+    </div>
+
+    <div style="margin-left: 70%; margin-top: -460px;" class="flex">
+      <img style="width: 430px;" src="img/coin.gif"/>
+    </div>
+    
+  </div>
+
+  
+    
+  
+    
+
+  <script>
+      function convertToBRL() {
+        const btcValue = parseFloat(document.getElementById("btcInput").value);
+        const brlValue = btcValue * 357282.73; // Valor aproximado em BRL (consultado em 04/09/2024)
+        document.getElementById("resultBRL").textContent = `Valor em BRL: R$ ${brlValue.toFixed(2)}`;
+        resultBRL.style.background = "#84642c";
+        resultBRL.style.color = "#fff";
+        resultBRL.style.width = "300px";
+        resultBRL.style.height = "40px";
+        resultBRL.style.textAlign = "center";
+        resultBRL.style.paddingTop = "13px";
+        resultBRL.style.marginTop = "3%";
+        resultBRL.style.borderRadius = "15px";
+      }
+
+      function convertToBTC() {
+        const brlValue = parseFloat(document.getElementById("brlInput").value);
+        const btcValue = brlValue / 357282.73; // Valor aproximado em BTC (consultado em 04/09/2024)
+        document.getElementById("resultBTC").textContent = `Valor em BTC: ${btcValue.toFixed(6)}`;
+        resultBTC.style.background = "#84642c";
+        resultBTC.style.color = "#fff";
+        resultBTC.style.width = "300px";
+        resultBTC.style.height = "40px";
+        resultBTC.style.textAlign = "center";
+        resultBTC.style.paddingTop = "13px";
+        resultBTC.style.marginTop = "3%";
+        resultBTC.style.borderRadius = "15px";
+      }
+  </script>
+
+
+</body>
+
+</html>

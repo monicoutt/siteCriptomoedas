@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Criptomoedas</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+  <div class="telabig">
+
+
+    <nav class="menu-lateral">
+      <div class="btn-expandir">
+        <i class="bi bi-list" id="btn-exp"></i>
+      </div>
+      <!--btn-expandir-->
+      <br>
+      <!--MENU-->
+      <ul>
+
+        <li class="item-menu ativo">
+          <a href="index.html">
+            <span class="icon"><i style="color: #666666;" class="bi bi-house-fill"></i></span>
+            <span style="color: #666666;  font-family: poppins; font-size: 18px;" class="txt-link">Introdução</span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="quiz.html">
+            <span class="icon"><i style="color: #666666;" class="bi bi-question-circle"></i></span>
+            <span style="color: #666666; font-family: poppins; font-size: 18px;" class="txt-link">Quiz</span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="conversorB.html">
+            <span class="icon"><i style="color: #666666;" class="bi bi-currency-bitcoin"></i></span>
+            <span style="color: #666666; font-family: poppins; font-size: 18px;" class="txt-link">Conversor (Bitcoin)</span>
+          </a>
+        </li> 
+      </ul>
+    </nav>
+    <!--menu-lateral-->
+
+    <main>
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1 style="font-family: poppins; color: #D49B2D; font-weight: bold; font-size: 95px; text-align: left; margin-left: 300px;"> CRIPTOMOEDAS </h1>
+              <div class="">
+                <h1 style="font-family: poppins; color: #ffff; font-weight: bold; font-size: 35px; margin-left: 340px;"> uma abordagem crítica e informativa </h1>
+
+                <a style="text-decoration: none; font-size: 16px; " href=""> <button style="margin-left: 35%; margin-top: 5%; background-color: #9D7E39; border: none; padding: 20px; border-radius: 40px; box-shadow: 5px 5px 0px #0d0d0c; cursor: pointer; color: #FFF;"> ACESSE O NOSSO RELATÓRIO AQUI <img src="img/seta.png" width="25px" style="margin-left: 10px;"/> </button> </a>
+
+              </div>
+              <div class="retangulo" style="position: static;"></div>
+              
+              <div class="img-topo-site">
+                <img class="coin" src="img/coin.png" style="opacity: 0.50;"/>
+              </div>
+
+              <div class="retangulo2"></div>
+            </div>
+            <!--txt-topo-site-->
+              
+          </div>
+          <!--flex-->
+
+        </div>
+        <!--interface-->
+      </section>
+      <!--topo-site-->
+    </main>
+  </div>
+
+  <div class="container1" style="height: 330%; background-color: #222222;">
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="slider">
+
+      <div class="slides" style="margin-top: 10%;">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+
+
+      <div class="slide primeiro">
+        <img src="img/slide1.png" alt="imagem 1"/>
+      </div>
+      <div class="slide">
+        <img src="img/slide2.png" alt="imagem 2"/>
+      </div>
+      <div class="slide">
+        <img src="img/slide3.png" alt="imagem 3"/>
+      </div>
+      <div class="slide">
+        <img src="img/slide4.png" alt="imagem 4"/>
+      </div>
+      <div class="slide">
+        <img src="img/slide5.png" alt="imagem 5"/>
+      </div>
+      <div class="slide">
+        <img src="img/slide6.png" alt="imagem 6"/>
+      </div>
+      <div class="slide">
+        <img src="img/slide7.png" alt="imagem 7"/>
+      </div>
+
+
+    </div>
+
+      <div class="navigation-manual" style="display: flex; justify-content: center; align-items: center; margin-left: 4%;">
+          <label id="#cripto" for="radio1" class="manual-btn" ></label>
+          <label for="radio2" class="manual-btn" ></label>
+          <label for="radio3" class="manual-btn" ></label>
+          <label for="radio4" class="manual-btn" ></label>
+          <label for="radio5" class="manual-btn" ></label>
+          <label for="radio6" class="manual-btn" ></label>
+          <label for="radio7" class="manual-btn" ></label>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="font-family: poppins; color: #80663a; font-weight: bold; font-size: 40px; text-align: center; margin-left: 3.7%; text-shadow: 2px 2px 9px #0d0d0c;">VÍDEOS SOBRE O TEMA</h1>
+
+    <div class="flex">
+
+      
+        <div style="margin-top: 5%; margin-left: 13%; box-shadow: 20px 20px 11px #0c0c0c; width: 500px; height: 500px; background-color: #161615; border-radius: 25px;">   
+          <iframe style="border-radius: 25px;" width="500" height="315" src="https://www.youtube.com/embed/knYTd9WNeIk?si=8ZbcX50JTWO8fbtl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p class="text-video"> Qual a LÓGICA do Bitcoin? O mínimo que você precisa saber sobre CRIPTOMOEDAS. Mesmo com a popularização do Bitcoin, muitos investidores ainda não sabem o que é o bitcoin e como ele funciona. Portanto, se você é iniciante e quer começar no mercado de <br> criptomoedas, esse vídeo vai te ensinar tudo que você precisa <br> saber antes de investir em bitcoin.</p>
+        </div>
+      
+
+        <div style="margin-top: 5%; margin-left: 13%; box-shadow: 20px 20px 11px #0c0c0c; width: 500px; height: 500px; background-color: #161615; border-radius: 25px;">   
+        <iframe style="border-radius: 25px;" width="500" height="315" src="https://www.youtube.com/embed/bbfRK6J47Kk?si=DAF1fOgHjI7HkZXO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="text-video" style="margin-top: 50px;"> O que é Bitcoin? Como essa criptmoeda funciona? <br> Fernando Ulrich, nesse vídeo, explica tudo sobre essa criptomoeda <br> que tem tudo para se tornar o dinheiro do futuro. </p>
+      </div>
+    </div>
+
+
+
+    <div class="flex">
+
+      <div style="margin-top: 5%; margin-left: 13%; box-shadow: 20px 20px 11px #0c0c0c; width: 500px; height: 450px; background-color: #161615; border-radius: 25px;">     
+        <iframe style="border-radius: 25px;" width="500" height="315" src="https://www.youtube.com/embed/vWev346w3oc?si=j2ZPhfimI-Wnp26Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="text-video"> Nesse vídeo o youtuber do <i>Canal do Holder</i>, mostra <br> os 7 possíveis riscos que um investidor de criptomoedas pode <br> correr ao adentrar nesse mundo virtual e totalmente volátil. </p>
+      </div>
+
+      <div style="margin-top: 5%; margin-left: 13%; box-shadow: 20px 20px 11px #0c0c0c; width: 500px; height: 450px; background-color: #161615; border-radius: 25px;">    
+        <iframe style="border-radius: 25px;" width="500" height="315" src="https://www.youtube.com/embed/mVw4I9w89q8?si=l0OZy6_aCUJQ7Fb3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="text-video"> EDUARDO FELDBERG, também conhecido como PRIMO <br> POBRE, é produtor visual e investidor. Ele dá dicas sobre investimentos <br> e não tem papas na língua quando é pra dar bronca em quem <br> investe mal. Já Vilela acha que quem investe é investigador. </p>
+      </div>
+    </div>
+
+
+
+
+    <div class="flex">
+
+      <div style="margin-top: 5%; margin-left: 13%; box-shadow: 20px 20px 11px #0c0c0c; width: 500px; height: 450px; background-color: #161615; border-radius: 25px;">   
+        <iframe style="border-radius: 25px;" width="500" height="315" src="https://www.youtube.com/embed/PLqdkIYt7Sw?si=9bHd-gNOItdspGAj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="text-video"> Em entrevista para o <i>podcast "Podpah"</i>, Chico Veiga, investidor <br> de bitcoin (BTC) e outras criptomoedas, mais conhecido como "Chico Moedas", conta toda a sua tragetória no ramo dos investimentos até o momento de sua ascensão. </p>
+      </div>
+
+      <div style="margin-top: 5%; margin-left: 13%; box-shadow: 20px 20px 11px #0c0c0c; width: 500px; height: 450px; background-color: #161615; border-radius: 25px;">   
+        <iframe style="border-radius: 25px;" width="500" height="315" src="https://www.youtube.com/embed/CGDV2Tqs2ew?si=CicaTPgaiG5K_SKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="text-video"> AUGUSTO BACKES é dentista e investidor. Ele é expert em <br> criptomoedas e ensina como investir nesse mercado em seu canal no YouTube. O Vilela já pensou em investir em bitcoins, mas quando <br> colocou a mão no bolso foi picado por um escorpião. </p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="container2">
+    <br>
+    <br>
+    <br>
+    <h1 style="font-family: poppins; color: #BE9829; font-weight: bold; font-size: 40px; text-align: center; text-shadow: 2px 2px 9px #50504f; margin-left: 3.7%;"> Principais criptomoedas do</h1>
+    <h1 style="font-family: poppins; color: #BE9829; font-weight: bold; font-size: 40px; text-align: center; text-shadow: 2px 2px 9px #50504f; margin-left: 3.7%;"> mercado atualmente</h1>
+    <div class="center">
+      <div class="flex">
+      <div class="hover">
+        <div class="retangulo3"> <img src="img/bitcoin.png" style="width: 180px; opacity: .8; margin-left: 30%; margin-top: 15%; border-radius: 200px; background-color: #0d0d0c; box-shadow: 0px 0px 30px #2E2E2A;"/> 
+          <h1 style="font-size: 30px; margin-left: 5%; margin-top: 12%; color: #E6E683; font-weight: bold;">Bitcoin</h1>
+          
+          <p style="margin-left: 5%; margin-top: 4%; color: #6f6d6d; font-size: 14px;"> <span style="color: #94948E; font-weight: bold;"> Primeira criptomoeda:</span> Criada em 2008, é a pioneira no mercado de criptomoedas. </p>
+          
+          <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;">  <span style="color: #94948E; font-weight: bold;">Descentralização: </span> Funciona sem uma autoridade central, operando em uma rede peer-to-peer. </p>
+          
+          <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Blockchain público: </span> Todas as transações são registradas em um livro-razão público, transparente e imutável. </p>
+          
+          <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;">Proof-of-work: </span> Utiliza mineração para validar transações e emitir novos bitcoins. </p>
+          
+          <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;">  <span style="color: #94948E; font-weight: bold;"> Reserva de valor: </span> Muitas vezes comparado ao ouro digital devido à sua oferta limitada (21 milhões de bitcoins) e aceitação global. </p>
+        </div>
+      </div>
+      
+
+      <div class="hover">
+    <div class="retangulo3"><img src="img/dash.png" style="width: 180px; opacity: .9; margin-left: 28%; margin-top: 18%; border-radius: 200px; background-color: #0d0d0c; box-shadow: 0px 0px 30px #2E2E2A;"/>
+      <h1 style="font-size: 30px; margin-left: 5%; margin-top: 7%; color: #E6E683; font-weight: bold;">Dash</h1>
+      
+      <p style="margin-left: 5%; margin-top: 4%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Transações rápidas: </span> Oferece InstantSend para confirmações quase instantâneas. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Privacidade: </span> Funcionalidade PrivateSend para transações anônimas. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Governança descentralizada: </span> DGBB permite que os detentores de Dash votem em propostas de desenvolvimento e melhorias. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Masternodes: </span> Além dos mineradores, a rede conta com masternodes que facilitam serviços avançados e recebem recompensas adicionais. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Foco em usabilidade: </span> Projetada para ser uma moeda digital prática para uso diário. </p>
+    </div>
+      </div>
+        
+      </div>
+      </div>
+
+    <div class="center">
+      <div class="flex">
+      <div class="hover">
+    <div class="retangulo3"><img src="img/dogecoin.png" style="width: 180px; opacity: .8; margin-left: 28%; margin-top: 14%; border-radius: 200px; background-color: #0d0d0c; box-shadow: 0px 0px 30px #2E2E2A;"/>
+    <h1 style="font-size: 30px; margin-left: 5%; margin-top: 8%; color: #E6E683; font-weight: bold;">Dogecoin</h1>
+      
+      <p style="margin-left: 5%; margin-top: 4%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Origem de meme: </span> Criado inicialmente como uma piada baseada no meme "Doge", mas ganhou seriedade com o tempo. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Comunidade ativa: </span> Forte base de apoiadores e uso frequente para gorjetas e causas beneficentes. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Inflação controlada: </span> Oferta ilimitada de moedas, com uma emissão constante, o que impede a deflação e incentiva o gasto. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Transações rápidas e baratas: </span> Uso da tecnologia Scrypt para proof-of-work, permitindo confirmações rápidas e custos de transação baixos. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Apoio de celebridades: </span> Ganhou notoriedade e apoio de figuras públicas como Elon Musk. </p>
+    </div>
+      </div>
+
+      <div class="hover">
+    <div class="retangulo3"><img src="img/polkadot.png" style="width: 180px; opacity: .8; margin-left: 27%; margin-top: 14%; border-radius: 200px; background-color: #0d0d0c; box-shadow: 0px 0px 30px #2E2E2A;"/>
+    <h1 style="font-size: 30px; margin-left: 5%; margin-top: 8%; color: #E6E683; font-weight: bold;">Polkadot</h1>
+      
+      <p style="margin-left: 5%; margin-top: 4%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Interoperabilidade: </span> Conectividade entre diferentes blockchains, permitindo comunicação e transferência de dados entre elas. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Parachains e Relay Chain: </span> Arquitetura composta por múltiplas blockchains específicas (parachains) conectadas a uma cadeia principal (Relay Chain). </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Governança on-chain: </span> Detentores de DOT têm poder de voto em decisões importantes da rede, incluindo atualizações e ajustes. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Escalabilidade: </span> Projetada para processar várias transações em paralelo através de parachains. </p>
+      
+      <p style="margin-left: 5%; color: #6f6d6d; font-size: 15px;"> <span style="color: #94948E; font-weight: bold;"> Nominated Proof-of-Stake (NPoS): </span> Consenso baseado em proof-of-stake, com participantes nominando validadores para garantir a segurança e operação da rede. </p>
+    </div>
+      </div>
+      </div>
+    </div>
+        
+  </div>
+
+
+
+
+  
+  <div class="container3">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1 style="font-family: poppins; color: #BE9829; font-weight: bold; font-size: 40px; text-align: center; text-shadow: 2px 2px 9px #50504f; margin-left: 3.7%;"> Desafios e preocupações com </h1>
+    <h1 style="font-family: poppins; color: #b89a42; font-weight: bold; font-size: 40px; text-align: center; margin-bottom: 40px; text-shadow: 2px 2px 9px #50504f; margin-left: 3.7%;">criptomoedas no metaverso </h1>    
+    
+    <div class="container">
+
+      <!-- Primeiro -->
+      <div class="card">
+        <div class="img">
+          <img src="img/volatilidade.png" style="width: 40%; margin-bottom: 30px; margin-top: 20px;">
+        </div>
+        <h1>Volatilidade</h1>
+        <div class="content">
+          <p>
+            A volatilidade das criptomoedas é um desafio significativo, caracterizado por grandes flutuações de preço. Isso se deve a fatores como especulação intensa, baixa liquidez e incerteza regulatória. A especulação leva a movimentos bruscos no valor, enquanto a baixa liquidez pode causar grandes variações com ordens pequenas. Além disso, mudanças nas regulamentações e eventos externos também afetam os preços. Embora isso ofereça oportunidades para lucros, também representa riscos consideráveis, exigindo uma gestão cuidadosa e uma compreensão profunda do mercado para mitigar possíveis perdas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Segundo -->
+      <div class="card" style="height: 625px;">
+        <div class="img">
+          <img src="img/ambiental.png" style="width: 35%; margin-bottom: 30px; margin-top: 20px;">
+        </div>
+        <h1 style="margin-top: -10px;">Questões Ambientais</h1>
+        <div class="content">
+          <p style="margin-top: -10px;">
+            Os desafios ambientais das criptomoedas estão principalmente relacionados ao elevado consumo de energia na mineração, especialmente em redes baseadas em proof-of-work, como o Bitcoin. Esse processo consome grandes quantidades de eletricidade, muitas vezes de fontes não renováveis, e gera emissões de gases de efeito estufa. Além disso, a mineração gera resíduos eletrônicos devido à rápida obsolescência dos equipamentos. Para mitigar esses problemas, há esforços para adotar alternativas mais sustentáveis, como proof-of-stake e o uso de energias renováveis, visando reduzir o impacto ambiental do setor.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <!-- Terceiro -->
+      <div class="card">
+        <div class="img">
+          <img src="img/faltaConhecimento.png" style="width: 40%; margin-bottom: 30px; margin-top: 20px;">
+        </div>
+        <h1>Falta de conhecimento</h1>
+        <div class="content">
+          <p>
+            A falta de conhecimento nas criptomoedas pode resultar em decisões financeiras ruins, fraudes e problemas na proteção dos ativos digitais. Sem entender os conceitos técnicos e os riscos envolvidos, investidores podem enfrentar perdas significativas e dificuldades ao usar ou proteger suas criptomoedas. Além disso, a falta de conhecimento pode atrasar a adoção e o desenvolvimento da tecnologia, bem como complicar a criação de regulamentações adequadas. A promoção da educação e a conscientização são essenciais para mitigar esses desafios e criar um ambiente mais seguro e eficiente no setor das criptomoedas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quarto -->
+      <div class="card">
+        <div class="img">
+          <img src="img/riscoSeguranca.png" style="width: 40%; margin-bottom: 30px; margin-top: 20px;">
+        </div>
+        <h1>Riscos de Segurança</h1>
+        <div class="content">
+          <p>
+            Os desafios de segurança nas criptomoedas incluem ataques a exchanges e carteiras digitais, engenharia social, e a irreversibilidade das transações. Os ataques cibernéticos podem resultar em roubos massivos de fundos, enquanto técnicas de engenharia social visam enganar usuários para obter informações sensíveis. A irreversibilidade das transações significa que erros ou fraudes não podem ser desfeitos. Além disso, vulnerabilidades tecnológicas e a falta de regulamentação uniforme complicam a segurança. Para mitigar esses riscos, é essencial adotar boas práticas de segurança e manter a conscientização sobre as ameaças.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+     
+  </div>
+
+
+
+    <div class="container4">
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <h1 style="font-family: poppins; color: #BB9A38; font-weight: bold; font-size: 40px; text-align: center; text-shadow: 2px 2px 9px #50504f; margin-left: 3.7%;"> Vantagens das transações com </h1>
+      <h1 style="font-family: poppins; color: #AB9040; font-weight: bold; font-size: 40px; text-align: center; margin-bottom: 40px; text-shadow: 2px 2px 9px #50504f; margin-left: 3.7%;"> criptomoedas no metaverso </h1>
+
+      <div class="container">
+
+        <!-- Primeiro -->
+        <div class="card" style="height: 600px;">
+          <div class="img">
+            <img src="img/seguranca.png" style="width: 30%; margin-bottom: 50px; margin-top: 20px;">
+          </div>
+          <h1>Segurança</h1>
+          <div class="content">
+            <p>
+              A segurança nas criptomoedas oferece proteção contra fraudes e roubos graças ao registro imutável na blockchain. A descentralização impede manipulações, pois não há um ponto central de falha. A criptografia forte protege os fundos dos usuários. Além disso, as transações globais são rápidas e sem intermediários, reduzindo custos e atrasos. Esses fatores aumentam a confiança e a adoção das criptomoedas como uma alternativa segura aos sistemas financeiros tradicionais.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Segundo -->
+        <div class="card" style="height: 600px;">
+          <div class="img">
+            <img src="img/descentralizacao.png" style="width: 45%; margin-bottom: 20px; margin-top: 20px;">
+          </div>
+          <h1>Descentralização</h1>
+          <div class="content">
+            <p style="margin-top: -10px;">
+              A descentralização nas criptomoedas oferece resistência à censura e manipulação, já que não há uma autoridade central. Promove transparência e confiança ao registrar todas as transações publicamente na blockchain, eliminando intermediários e reduzindo custos. Aumenta a segurança, pois os dados são distribuídos por vários nós, tornando a rede mais resistente a ataques. Além disso, facilita a inclusão financeira, permitindo que pessoas ao redor do mundo participem do sistema financeiro, independentemente de sua localização ou status econômico.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="container">
+        <!-- Terceiro -->
+        <div class="card" style="height: 600px;">
+          <div class="img">
+            <img src="img/protecaoInflacao.png" style="width: 35%; margin-bottom: 30px; margin-top: 20px;">
+          </div>
+          <h1>Proteção conta Inflação</h1>
+          <div class="content">
+            <p>
+              A proteção contra a inflação é uma vantagem das criptomoedas, pois muitas, como o Bitcoin, têm um fornecimento limitado, o que impede a criação excessiva e ajuda a preservar seu valor. Em economias com alta inflação, as criptomoedas oferecem uma alternativa para proteger o poder de compra. Além disso, sua transparência e previsibilidade proporcionam estabilidade financeira, tornando-as uma opção viável para quem busca evitar a depreciação de ativos.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Quarto -->
+        <div class="card" style="height: 600px;">
+          <div class="img">
+            <img src="img/disponibilidadeGlobal.png" style="width: 35%; margin-bottom: 45px; margin-top: 20px;">
+          </div>
+          <h1>Disponibilidade Global</h1>
+          <div class="content">
+            <p>
+              A disponibilidade global das criptomoedas oferece inclusão financeira, permitindo que pessoas em qualquer lugar acessem a economia global. Facilita transferências internacionais rápidas e baratas, essenciais para remessas, e possibilita a diversificação de investimentos além das moedas locais. Além disso, as criptomoedas operam 24/7, permitindo transações a qualquer hora, sem as limitações dos sistemas bancários tradicionais.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+  
+  <div class="container1" style="height: 440%">
+
+    <br>
+    <br>
+    <br>
+    <h1 style="font-family: poppins; color: #80663a; font-weight: bold; font-size: 40px; text-align: center; margin-bottom: -40px; text-shadow: 2px 2px 9px #0d0d0c;">ARTIGOS SOBRE O TEMA</h1>
+    
+    <!-- Primeiro -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> A MINERAÇÃO DE CRIPTOMOEDAS <br> E OS IMPACTOS AMBIENTAIS: REFLEXOS NA AGENDA 2030 </h2>
+          <p class="desc"> O presente artigo tem como problema de pesquisa o seguinte questionamento: <br> quais os impactos ambientais trazidos pela mineração de criptomoedas? [...] </p>
+        </div>
+        <div class="botao">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo1.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Segundo -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> CRIPTOMOEDAS: UM “VILÃO” AMBIENTAL </h2>
+          <p class="desc"> [...] O  presente  trabalho  tem  como  objetivo  demonstrar  que  o Bitcoin, <br> criptomoeda  baseada  em tecnologia Blockchain,  foi  apontado  por vários <br> estudos e mapeamentos como um vilão na emissão de carbono [...] </p>
+        </div>
+        <div class="botao">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo2.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terceiro -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> IMPACTOS DA MINERAÇÃO DE CRIPTOMOEDAS <br> NO CONSUMO DE ENERGIA ELÉTRICA E NO MEIO AMBIENTE </h2>
+          <p class="desc"> [...] haverá uma comparação do consumo de energia elétrica gerado em pontos de <br> mineração com estas cidades, além de informar qual é o impacto causado no quesito ambiental [...] </p>
+        </div>
+        <div class="botao">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo3.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quarto -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> IMPACTOS SOCIOECONÔMICOS DA <br> CRIPTOMOEDA NA SOCIEDADE </h2>
+          <p class="desc"> [...] O presente trabalho de conclusão de curso o tem como problema de <br> pesquisa o seguinte questionamento: primeiro, a criptomoeda é capaz de implementada <br> como moeda corrente? Quais os impactos ambientais, sociais e econômicos? [...] </p>
+        </div>
+        <div class="botao">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo4.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinto -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> CRIPTOMOEDAS: IMPACTOS NA ECONOMIA <br> GLOBAL. PERSPECTIVAS </h2>
+          <p class="desc"> [...] O  objetivo  deste  artigo  visa  demonstrar  a  importância  de  se  compreender <br> esse  fenômeno  tecnológico  que  está  rompendo  paradigmas  econômicos  e  sociais, <br>  maravilhando  o  mundo  com  suas  possibilidades  e  alarmando  com  seus  efeitos econômicos. </p>
+        </div>
+        <div class="botao">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo5.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sexto -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> A MINERAÇÃO DE CRIPTOMOEDAS DE FORMA IMODERADA E SEUS IMPACTOS AMBIENTAIS: UMA ANÁLISE À LUZ DA LEI Nº 9.605/98 </h2>
+          <p class="desc"> O presente artigo objetiva estudar de forma precisa a Lei de Crimes Ambientais (9.605/98) <br> e questionar sua eficácia no que tange a penalização da prática da criptomineração de forma <br> irregular, uma vez que a mesma causa impactos ambientais.  [...] </p>
+        </div>
+        <div class="botao">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo6.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sétimo -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> CRIMES CIBERNÉTICOS COM CRIPTOMOEDAS: ANÁLISE DA LEGISLAÇÃO BRASILEIRA E ESTUDO DE CASOS </h2>
+          <p class="desc"> A crescente popularidade das criptomoedas tem sido acompanhada por um aumento <br> alarmante em crimes cibernéticos, com a lavagem de dinheiro emergindo como uma das <br> principais preocupações. As características intrínsecas das criptomoedas, como descentralização <br> e potencial anonimato, astornam um veículo atrativo para atividades ilícitas. [...] </p>
+        </div>
+        <div class="botao2">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo7.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Oitavo -->
+    <div class="containertwo">
+      <div class="cardtwo">
+        <div class="texto">
+          <h2 class="text-main"> CRIPTOMOEDAS NO BRASIL: DESAFIOS E PERSPECTIVAS PARA A ADOÇÃO NO COTIDIANO </h2>
+          <p class="desc"> O objetivo desta pesquisa é investigar os desafios e perspectivas para a adoção das <br> criptomoedas no cotidiano. A análise foca em identificar os benefícios potenciais, usos práticos <br> e os obstáculos técnicos, regulatórios, de segurança, educacionais e de infraestrutura <br> que influenciam a aceitação e a integração generalizada das criptomoedas. [...] </p>
+        </div>
+        <div class="botao2">
+          <a style="color: #FFFBEB; text-decoration: none;" href="artigos/artigo8.pdf"> <button type="button" class="btn-artigo"> Saiba mais </button> </a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="rodape">
+      <br>
+      <br>
+      <h5>Nosso propósito</h5>
+      <p style="font-size: 16px;"> Somos um grupo de 4 meninas dispostas a informar as pessoas de um assunto tão atual e interessante, como o mundo do metaverso, mais especificamente sobre as criptomoedas. Desse modo, o intuito do nosso site é justamente demonstrar como funciona esse meio, a forma como ele é aplicado, seus impactos e mudanças no mercado, e o quanto está sendo utilizado atualmente, assim a partir do nosso website conseguiremos atingir a meta de informar e trazer mais pessoas para o mundo dos investimentos virtuais, alertando sobre os seus riscos e recomendando de acordo com os seus benefícios. </p>
+
+      <br>
+      <br>
+      <div class="retangulo2" style="margin-top: -1%; background-color: #a19968; height: 1px;"></div>
+      <br>
+      <br> 
+
+      <div class="center">
+        <div class="flex">
+          <img src="img/monique.png" style="width: 15%; height: 15%; margin-left: 15%; margin-right: auto; "/>
+          <img src="img/maisa.png" style="width: 15%; height: 15%; margin-left: 90px; margin-right: auto; border-radius: 100%;"/>
+          <img src="img/nicolly.png" style="width: 15%; height: 15%; margin-left: 90px; margin-right: auto; border-radius: 100%;"/>
+          <img src="img/yasmin.png" style="width: 15%; height: 15%; margin-left: 90px; margin-right: 15%; border-radius: 100%; "/>
+        </div>
+      </div>
+
+      <div class="center">
+        <div class="flex">
+          <h5 style="margin-right: auto ; margin-left: -3%; text-align: center; margin-top: 15px;"> Monique Couto </h5>
+          <h5 style="margin-right: auto ; margin-left: 120px; text-align: center; margin-top: 15px;"> Maisa Fernandes </h5>
+          <h5 style="margin-right: auto ; margin-left: 110px; text-align: center; margin-top: 15px;"> Nicolly Lopes </h5>
+          <h5 style="margin-right: -15% ; margin-left: 90px; text-align: center; margin-top: 15px;"> Yasmin Rocha </h5>
+        </div>
+      </div>
+
+        <div class="flex">
+          <p style="margin-left: 15%; margin-right: 6%; text-align: center;"> Desenvolvedora <i>Full-Stack</i> e <i>Designer</i> </p>
+          <p style="margin-left: -1%; margin-right: 17%; text-align: center"> <i>Designer</i>, pesquisa e documentação </p>
+          <p style="margin-left: -11%; margin-right: 9%; text-align: center"> <i>Pesquisa e documentação </p>
+          <p style="margin-left: -40%; margin-right: 0%; text-align: center; margin-top: 30px;"> <i>Pesquisa e documentação </p>
+        </div>
+
+      <br>
+      <br>
+      <div class="retangulo2" style="margin-top: -2%; background-color: #a19968; height: 1px; margin-left: 47%;"></div>
+      
+      <p style="margin-left: 14%; margin-right: 52%; font-size: 17px; margin-top: 7%; color: #625D53;"> Estamos aqui para ajudar. Nosso trabalho é ajudá-lo a estar sempre seguro. Para falar conosco ou com nossa equipe de suporte técnico, ou obter respostas para as perguntas frequentes, nos envie uma mensagem por um dos nossos emails de contato.</p>
+
+      <h5 style="font-size: 15px; margin-left: 70%; margin-right: 15%; margin-top: -9%"> E-MAILS DE CONTATO: </h5>
+      <p style="text-align: right; font-size: 15px; margin-top: -1px; margin-right: 16%"> monique.couto@etec.sp.gov.br </p>
+      <p style="text-align: right; font-size: 15px; margin-top: -13px; margin-right: 15.6%; "> maisa.santos51@etec.sp.gov.br </p>
+      <p style="text-align: right; font-size: 15px; margin-top: -15px; margin-right: 16.7%;"> nicolly.lopes2@etec.sp.gov.br </p>
+      <p style="text-align: right; font-size: 15px; margin-top: -12px; margin-right: 15.6%;"> yasmin.rocha27@etec.sp.gov.br </p>
+
+      
+      
+    </div>
+  </footer>
+
+
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
